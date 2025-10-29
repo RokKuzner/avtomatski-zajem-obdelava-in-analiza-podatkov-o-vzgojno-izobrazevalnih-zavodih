@@ -5,6 +5,11 @@ connection = sqlite3.connect("database.db")
 # Create a cursor object
 cursor = connection.cursor()
 
+# Settings
+cursor.execute("""
+PRAGMA foreign_keys = ON;
+""")
+
 # Create a table
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS vzgojno_izobrazevalni_zavodi (
@@ -12,6 +17,14 @@ CREATE TABLE IF NOT EXISTS vzgojno_izobrazevalni_zavodi (
     type TEXT,
     name TEXT NOT NULL,
     website TEXT
+)
+""")
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS events_page_url (
+    id INTEGER PRIMARY KEY,
+    url TEXT,
+    FOREIGN KEY (id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
 )
 """)
 
