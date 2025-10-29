@@ -19,3 +19,13 @@ def get_all_vzgojno_izobrazevalni_zavodi() -> list[dict]:
         cursor.execute("SELECT * FROM vzgojno_izobrazevalni_zavodi")
 
         return [ dict(row) for row in cursor.fetchall() ]
+    
+def add_events_page_url(viz_id:int, url:str):
+    with sqlite3.connect("database.db") as connection:
+        cursor = connection.cursor()
+
+        # Insert a single row
+        cursor.execute("""
+            INSERT INTO events_page_url (id, url)
+            VALUES (?, ?)
+        """, (viz_id, url))
