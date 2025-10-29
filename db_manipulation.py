@@ -20,12 +20,12 @@ def get_all_vzgojno_izobrazevalni_zavodi() -> list[dict]:
 
         return [ dict(row) for row in cursor.fetchall() ]
     
-def add_events_page_url(viz_id:int, url:str):
+def add_events_page_url(viz_id: int, url: str):
     with sqlite3.connect("database.db") as connection:
         cursor = connection.cursor()
 
-        # Insert a single row
         cursor.execute("""
             INSERT INTO events_page_url (id, url)
             VALUES (?, ?)
+            ON CONFLICT(id) DO UPDATE SET url = excluded.url
         """, (viz_id, url))
