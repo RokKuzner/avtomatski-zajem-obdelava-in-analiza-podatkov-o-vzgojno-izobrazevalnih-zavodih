@@ -29,3 +29,12 @@ def add_events_page_url(viz_id: int, url: str):
             VALUES (?, ?)
             ON CONFLICT(id) DO UPDATE SET url = excluded.url
         """, (viz_id, url))
+
+def get_events_page_url(viz_id:int) -> str|None:
+    with sqlite3.connect("database.db") as connection:
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT url FROM events_page_url WHERE id=?", (viz_id,))
+        res = cursor.fetchone()
+
+        return res[0] if res else None
