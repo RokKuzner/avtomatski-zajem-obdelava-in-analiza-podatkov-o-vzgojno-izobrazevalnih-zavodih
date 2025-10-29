@@ -1,7 +1,9 @@
 import os
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def find_events_page(base_url:str) -> str|None:
     pass
