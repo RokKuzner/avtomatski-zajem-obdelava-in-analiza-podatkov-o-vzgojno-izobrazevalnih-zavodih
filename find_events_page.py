@@ -2,11 +2,25 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
+import requests
 
 load_dotenv()
 
 def find_events_page(base_url:str) -> str|None:
-    pass
+    url_to_check = base_url
+
+    for i in range(10): # Limit the amout of pages explored
+        response = requests.get(url_to_check, allow_redirects=True)
+        if response.status_code != 200: continue
+        html = response.text
+        
+        generated_response = generate_find_events_page_response(html, url_to_check)
+        if "NEWS FOUND" in generated_response.upper():
+            return url_to_check
+        else:
+            url_to_check = generated_response
+
+    return None
 
 def generate_find_events_page_response(html:str, url:str) -> str:
     client = genai.Client(
@@ -40,4 +54,4 @@ def generate_find_events_page_response(html:str, url:str) -> str:
         config=generate_content_config,
     )
 
-    return content
+    return content.text
