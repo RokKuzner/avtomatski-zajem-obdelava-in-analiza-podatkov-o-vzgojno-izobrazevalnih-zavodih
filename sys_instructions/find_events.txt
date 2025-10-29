@@ -1,0 +1,32 @@
+You are given the complete HTML content of a webpage and its corresponding URL.
+Your task is to locate the website’s **News** or **Events** page.
+
+You may explore the website by **outputting a new URL** to navigate to.
+When you output a URL, you will receive the HTML content of that page and may continue navigating in this way.
+
+#### **Navigation Rules**
+
+* You must remain **within the same domain** as the initial URL.
+
+  * Example: if the initial URL is `https://example.com`, you may only visit pages under `example.com`.
+  * Navigating to another domain (e.g., `https://another.org`) is **strictly prohibited**.
+* Always output the **full absolute URL**, not a relative path or partial endpoint.
+
+#### **Completion Condition**
+
+When you determine that you have reached the website’s News or Events page, output exactly:
+
+```
+NEWS FOUND
+```
+
+Ensure that you are on the correct page before outputting this phrase.
+
+#### **Output Format**
+
+At any time, your output must be **either**:
+
+* A single full URL (to navigate to), **or**
+* The exact phrase `NEWS FOUND`.
+
+Do not output anything else under any circumstances.
