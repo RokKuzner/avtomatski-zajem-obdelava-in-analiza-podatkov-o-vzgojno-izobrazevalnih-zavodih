@@ -8,23 +8,13 @@ load_dotenv()
 def find_events_page(base_url:str) -> str|None:
     pass
 
-def generate_find_events_page_response(html:str) -> str:
+def generate_find_events_page_response(html:str, url:str) -> str:
     client = genai.Client(
         api_key=os.environ.get("GEMINI_API_KEY"),
     )
-
     with open("./sys_instructions/find_events.txt", "r") as f:
         sys_instructions = f.read()
-
     model = "gemini-2.5-flash-lite"
-    contents = [
-        types.Content(
-            role="user",
-            parts=[
-                types.Part.from_text(text="""INSERT_INPUT_HERE"""),
-            ],
-        ),
-    ]
     generate_content_config = types.GenerateContentConfig(
         temperature=0.5,
         thinking_config = types.ThinkingConfig(
@@ -34,6 +24,15 @@ def generate_find_events_page_response(html:str) -> str:
             types.Part.from_text(text=sys_instructions),
         ],
     )
+
+    contents = [
+        types.Content(
+            role="user",
+            parts=[
+                types.Part.from_text(text=f"URL: {url}\nHTML: `{html}`"),
+            ],
+        ),
+    ]
 
     content = client.models.generate_content(
         model=model,
