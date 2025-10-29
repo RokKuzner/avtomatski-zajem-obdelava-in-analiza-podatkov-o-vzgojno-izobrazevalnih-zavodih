@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-import selenium
+import db_manipulation as db
 
 primary_school_records_url = "https://paka3.mss.edus.si/registriweb/Seznam1.aspx?Seznam=2010"
 middle_school_records_url = "https://paka3.mss.edus.si/registriweb/Seznam2.aspx?Seznam=3010"
@@ -42,7 +42,7 @@ try:
                 school_name = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["name_c_n"]}) > a").text
                 school_website = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["web_c_n"]}) > a").get_attribute("href")
 
-                print(datapoint["label"], school_name, school_website)
+                db.add_vzgojno_izobrazevalni_zavod(datapoint["label"], school_name, school_website)
             except:
                 continue
 
