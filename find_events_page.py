@@ -8,7 +8,7 @@ load_dotenv()
 def find_events_page(base_url:str) -> str|None:
     pass
 
-def generate():
+def generate_find_events_page_response(html:str) -> str:
     client = genai.Client(
         api_key=os.environ.get("GEMINI_API_KEY"),
     )
