@@ -4,6 +4,7 @@ from google.genai import types
 from dotenv import load_dotenv
 import requests
 import re
+from urllib.parse import urljoin
 
 load_dotenv()
 valid_url_regex = re.compile(
@@ -23,8 +24,15 @@ def find_events_page(base_url:str) -> str|None:
         html = response.text
         
         generated_response = generate_find_events_page_response(html, url_to_check)
+
+        # Check if the news page was found
         if "NEWS FOUND" in generated_response.upper():
             return url_to_check
+        
+        # Check if the outputed URL is not valid
+        if re.match(valid_url_regex, generated_response) == None:
+            # Assume that a relative path was outputed and try to combine the paths
+            url_to_check = urljoin(base_url, generated_response)
         else:
             url_to_check = generated_response
 
