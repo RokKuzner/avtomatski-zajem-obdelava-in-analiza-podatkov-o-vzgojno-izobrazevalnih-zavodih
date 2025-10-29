@@ -132,3 +132,8 @@ credentials.json
 # =====================
 .DS_Store
 Thumbs.db
+
+# =====================
+# Other
+# =====================
+notes.txt
