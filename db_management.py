@@ -9,8 +9,9 @@ cursor = connection.cursor()
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS vzgojno_izobrazevalni_zavodi (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type TEXT,
     name TEXT NOT NULL,
-    website TEXT,
+    website TEXT
 )
 """)
 
