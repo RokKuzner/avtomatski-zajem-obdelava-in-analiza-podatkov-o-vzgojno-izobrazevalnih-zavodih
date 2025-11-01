@@ -1,14 +1,14 @@
 import sqlite3
 
-def add_vzgojno_izobrazevalni_zavod(type:str, name:str, website:str) -> bool:
+def add_vzgojno_izobrazevalni_zavod(type:str, name:str, website:str, headmaster:str, municipality:str) -> bool:
     with sqlite3.connect("database.db") as connection:
         cursor = connection.cursor()
 
         # Insert a single row
         cursor.execute("""
-            INSERT INTO vzgojno_izobrazevalni_zavodi (type, name, website)
-            VALUES (?, ?, ?)
-        """, (type, name, website))
+            INSERT INTO vzgojno_izobrazevalni_zavodi (type, name, website, headmaster, municipality)
+            VALUES (?, ?, ?, ?, ?)
+        """, (type, name, website, headmaster, municipality))
 
 def get_all_vzgojno_izobrazevalni_zavodi() -> list[dict]:
     with sqlite3.connect("database.db") as connection:
