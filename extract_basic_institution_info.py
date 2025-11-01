@@ -43,7 +43,7 @@ def extract_information():
                     school_name = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["name_c_n"]}) > a").text
                     school_website = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["web_c_n"]}) > a").get_attribute("href")
 
-                    db.add_vzgojno_izobrazevalni_zavod(datapoint["label"], school_name, school_website)
+                    db.add_vzgojno_izobrazevalni_zavod(datapoint["label"], school_name, school_website, "headmaster", "municipality") #TODO: extract the actual headm. and munic. data
                 except:
                     continue
 
