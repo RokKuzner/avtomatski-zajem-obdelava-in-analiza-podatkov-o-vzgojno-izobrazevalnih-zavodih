@@ -17,7 +17,6 @@ CREATE TABLE IF NOT EXISTS vzgojno_izobrazevalni_zavodi (
     type TEXT,
     name TEXT NOT NULL,
     website TEXT,
-    headmaster TEXT,
     municipality TEXT
 )
 """)
