@@ -18,6 +18,17 @@ def get_all_vzgojno_izobrazevalni_zavodi() -> list[dict]:
 
         return [ dict(row) for row in cursor.fetchall() ]
     
+def get_vzgojno_izobrazevalni_zavod_by_name(name:str) -> dict:
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM vzgojno_izobrazevalni_zavodi WHERE name=?", (name,))
+        res = cursor.fetchone()
+
+        if res: return dict(res)
+        else: return None
+    
 def add_events_page_url(viz_id: int, url: str):
     with sqlite3.connect("database.db") as connection:
         cursor = connection.cursor()
