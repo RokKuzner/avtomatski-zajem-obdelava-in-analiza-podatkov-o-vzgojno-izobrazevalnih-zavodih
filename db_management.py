@@ -16,15 +16,9 @@ CREATE TABLE IF NOT EXISTS vzgojno_izobrazevalni_zavodi (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT,
     name TEXT NOT NULL,
-    website TEXT
-)
-""")
-
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS headmasters (
-    id INTEGER PRIMARY KEY,
-    name TEXT,
-    FOREIGN KEY (id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
+    website TEXT,
+    headmaster TEXT,
+    municipality TEXT
 )
 """)
 
