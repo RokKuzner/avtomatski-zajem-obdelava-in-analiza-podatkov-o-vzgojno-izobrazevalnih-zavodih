@@ -12,12 +12,14 @@ def extract_information():
             "url": primary_school_records_url,
             "name_c_n": "3",
             "web_c_n": "10",
+            "municipality_c_n": "2",
             "label":"OS"
         },
         {
             "url": middle_school_records_url,
             "name_c_n": "1",
             "web_c_n": "8",
+            "municipality_c_n": "4",
             "label":"SS"
         }
         ]
@@ -42,8 +44,9 @@ def extract_information():
                 try:
                     school_name = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["name_c_n"]}) > a").text
                     school_website = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["web_c_n"]}) > a").get_attribute("href")
+                    school_municipality = row.find_element(By.CSS_SELECTOR, f".celica:nth-child({datapoint["municipality_c_n"]})").text
 
-                    db.add_vzgojno_izobrazevalni_zavod(datapoint["label"], school_name, school_website, "headmaster", "municipality") #TODO: extract the actual headm. and munic. data
+                    db.add_vzgojno_izobrazevalni_zavod(datapoint["label"], school_name, school_website, school_municipality)
                 except:
                     continue
 
