@@ -15,7 +15,7 @@ cursor.execute("""
 CREATE TABLE IF NOT EXISTS vzgojno_izobrazevalni_zavodi (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT,
-    name TEXT NOT NULL,
+    name TEXT NOT NULL UNIQUE,
     website TEXT,
     municipality TEXT
 )
