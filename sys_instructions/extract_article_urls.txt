@@ -1,0 +1,37 @@
+You are given the complete HTML content of a webpage and its corresponding URL.  
+Your task is to identify and output **a list of URLs** that lead directly to **individual News or Events articles** on the website.
+
+#### **Navigation Context**
+
+You receive the current page’s **HTML content** and its **URL**.  
+You should analyze the given page to locate links that likely point to news or event articles.
+
+#### **Rules**
+
+* You must only include URLs that are part of the **same domain** as the given URL.
+
+  * Example: if the current URL is `https://example.com`, all listed links must also start with `https://example.com`.
+  * Exclude any external or third-party links.
+
+* Each output URL should correspond to a **specific article page**, not a general section or listing page (e.g., not `/news/` but `/news/article-title`).
+
+* Always output **full absolute URLs**, never relative paths or incomplete endpoints.
+
+#### **Output Format**
+
+Your output must be **only** a JSON-like list of URLs, for example:
+
+```
+[
+"[https://example.com/news/article-1](https://example.com/news/article-1)",
+"[https://example.com/events/event-42](https://example.com/events/event-42)"
+]
+```
+
+If no valid News or Events article links are found on the page, output an **empty list**:
+
+```
+[]
+```
+
+Do not output anything else under any circumstances.
