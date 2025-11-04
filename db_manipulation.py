@@ -53,6 +53,6 @@ def add_article_url(viz_id:int, article_url:str):
         cursor = connection.cursor()
 
         cursor.execute("""
-            INSERT INTO article_urls (id, url)
+            INSERT OR IGNORE INTO article_urls (id, url)
             VALUES (?, ?)
         """, (viz_id, article_url))
