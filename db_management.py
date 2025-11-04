@@ -29,6 +29,14 @@ CREATE TABLE IF NOT EXISTS events_page_url (
 )
 """)
 
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS article_urls (
+    id INTEGER,
+    url TEXT,
+    FOREIGN KEY (id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
+)
+""")
+
 # Commit changes and close the connection
 connection.commit()
 connection.close()
