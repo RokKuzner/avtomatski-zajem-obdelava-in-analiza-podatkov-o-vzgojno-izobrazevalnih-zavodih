@@ -18,15 +18,23 @@ valid_url_regex = re.compile(
 
 def extract_article_urls():
     for viz in db.get_all_vzgojno_izobrazevalni_zavodi():
+        print(viz["name"])
+
         # Get the events page url
         events_page_url = db.get_events_page_url(viz["id"])
-        if not events_page_url: continue
+        if not events_page_url:
+            print("    ⏩ no events page")
+            continue
 
         # The the page HTML
         try:
             response = requests.get(events_page_url)
-        except:
+        except Exception as e:
+            with open("logs.txt", "a") as f:
+                f.write(viz["name"]+"\n"+events_page_url+"\n"+str(e)+"\n\n\n\n")
+            print("    ❌ error")
             continue
+
         if response.status_code != 200: continue
         html = response.text
 
@@ -35,6 +43,8 @@ def extract_article_urls():
 
         for url in urls:
             db.add_article_url(viz["id"], url)
+
+        print("    ✅")
 
 def generate_extract_article_urls_response(curent_url:str, html:str) -> list[str]:
     client = genai.Client(
