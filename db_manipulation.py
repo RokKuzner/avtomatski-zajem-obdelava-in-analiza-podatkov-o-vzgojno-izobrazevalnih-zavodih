@@ -47,3 +47,12 @@ def get_events_page_url(viz_id:int) -> str|None:
         res = cursor.fetchone()
 
         return res[0] if res else None
+
+def add_article_url(viz_id:int, article_url:str):
+    with sqlite3.connect("database.db") as connection:
+        cursor = connection.cursor()
+
+        cursor.execute("""
+            INSERT INTO article_urls (id, url)
+            VALUES (?, ?)
+        """, (viz_id, article_url))
