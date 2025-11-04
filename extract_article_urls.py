@@ -23,7 +23,10 @@ def extract_article_urls():
         if not events_page_url: continue
 
         # The the page HTML
-        response = requests.get(events_page_url)
+        try:
+            response = requests.get(events_page_url)
+        except:
+            continue
         if response.status_code != 200: continue
         html = response.text
 
