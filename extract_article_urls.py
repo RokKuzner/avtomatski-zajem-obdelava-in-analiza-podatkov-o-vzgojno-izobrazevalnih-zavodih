@@ -5,6 +5,7 @@ from urllib.parse import urljoin
 from google import genai
 from google.genai import types
 import os
+import requests
 
 load_dotenv()
 valid_url_regex = re.compile(
@@ -17,10 +18,17 @@ valid_url_regex = re.compile(
 
 def extract_article_urls():
     for viz in db.get_all_vzgojno_izobrazevalni_zavodi():
+        # Get the events page url
         events_page_url = db.get_events_page_url(viz["id"])
         if not events_page_url: continue
 
-        urls = generate_extract_article_urls_response("url", "html")
+        # The the page HTML
+        response = requests.get(events_page_url)
+        if response.status_code != 200: continue
+        html = response.text
+
+        # Get the urls to the articles
+        urls = generate_extract_article_urls_response(events_page_url, html)
 
         for url in urls:
             db.add_article_url(viz["id"], url)
