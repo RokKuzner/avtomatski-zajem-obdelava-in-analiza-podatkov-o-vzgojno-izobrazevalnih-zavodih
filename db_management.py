@@ -33,7 +33,7 @@ def manage():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS article_urls (
         id INTEGER,
-        url TEXT,
+        url TEXT UNIQUE,
         FOREIGN KEY (id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
     )
     """)
