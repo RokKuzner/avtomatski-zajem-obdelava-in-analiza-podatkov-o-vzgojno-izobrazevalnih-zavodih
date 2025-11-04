@@ -6,6 +6,7 @@ from google import genai
 from google.genai import types
 import os
 import requests
+import time
 
 load_dotenv()
 valid_url_regex = re.compile(
@@ -39,7 +40,15 @@ def extract_article_urls():
         html = response.text
 
         # Get the urls to the articles
-        urls = generate_extract_article_urls_response(events_page_url, html)
+        for attempt in range(10):
+            try:
+                urls = generate_extract_article_urls_response(events_page_url, html)
+                break
+            except Exception as e:
+                print("    server error")
+                print("        waiting")
+                time.sleep(10)
+                print("        🔁 retrying")
 
         for url in urls:
             db.add_article_url(viz["id"], url)
