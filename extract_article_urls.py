@@ -26,4 +26,54 @@ def extract_article_urls():
             db.add_article_url(viz["id"], url)
 
 def generate_extract_article_urls_response(curent_url:str, html:str) -> list[str]:
+    client = genai.Client(
+        api_key=os.environ.get("GEMINI_API_KEY"),
+    )
+
+    model = "gemini-2.5-flash-lite"
+    with open("./sys_instructions/extract_article_urls.txt", "r") as f:
+        sys_instructions = f.read()
+
+    generate_content_config = types.GenerateContentConfig(
+        temperature=0.5,
+        thinking_config = types.ThinkingConfig(
+            thinking_budget=8192,
+        ),
+        response_mime_type="application/json",
+        response_schema=genai.types.Schema(
+            type = genai.types.Type.OBJECT,
+            required = ["urls"],
+            properties = {
+                "urls": genai.types.Schema(
+                    type = genai.types.Type.ARRAY,
+                    items = genai.types.Schema(
+                        type = genai.types.Type.STRING,
+                    ),
+                ),
+            },
+        ),
+        system_instruction=[
+            types.Part.from_text(text=sys_instructions),
+        ],
+    )
+    
+    contents = [
+        types.Content(
+            role="user",
+            parts=[
+                types.Part.from_text(text=f"URL: {curent_url}\nHTML: {html}"),
+            ],
+        ),
+    ]
+
+    content = client.models.generate_content(
+        model=model,
+        contents=contents,
+        config=generate_content_config,
+    )
+
+    urls = content.parsed["urls"]
+
+    #TODO: validate urls
+
     return []
