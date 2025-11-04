@@ -72,8 +72,16 @@ def generate_extract_article_urls_response(curent_url:str, html:str) -> list[str
         config=generate_content_config,
     )
 
-    urls = content.parsed["urls"]
+    urls:list[str] = content.parsed["urls"]
+    final_urls = []
 
-    #TODO: validate urls
+    # Validate urls
+    for url in urls:
+        if re.match(valid_url_regex, url):
+            final_urls.append(url)
+        else:
+            candidate = urljoin(curent_url, url)
+            if re.match(valid_url_regex, candidate):
+                final_urls.append(candidate)
 
-    return []
+    return final_urls
