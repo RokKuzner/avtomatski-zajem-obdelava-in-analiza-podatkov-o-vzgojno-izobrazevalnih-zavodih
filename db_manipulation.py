@@ -56,3 +56,14 @@ def add_article_url(viz_id:int, article_url:str):
             INSERT OR IGNORE INTO article_urls (id, url)
             VALUES (?, ?)
         """, (viz_id, article_url))
+
+def get_articles_url_by_viz_id(viz_id:int):
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM article_urls WHERE id=?", (viz_id,))
+        res = cursor.fetchone()
+
+        if res: return dict(res)
+        else: return None
