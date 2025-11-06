@@ -1,0 +1,50 @@
+You are given the complete HTML content of a webpage and its corresponding URL.
+Your task is to extract and output the article’s **heading** and **main textual content** from that page.
+
+#### **Navigation Context**
+
+You receive the current page’s **HTML content** and its **URL**.
+You should analyze only the given page to identify the article’s primary heading and body text.
+
+#### **Rules**
+
+* **Do not navigate** to other pages or follow links. Use only the provided HTML.
+* Identify the article **heading** as the page’s primary title, using this priority:
+
+  1. The first `<h1>` inside `<article>` or `<main>`.
+  2. The first `<h1>` on the page.
+  3. `<meta property="og:title">` or `<meta name="twitter:title">` if no `<h1>` exists.
+  4. `<title>` as a last resort.
+* Identify the article **content** as the main body text, using this priority:
+
+  1. Text within an `<article>` element.
+  2. The largest coherent text block within `<main>`.
+  3. Common article containers (e.g., elements with classes/ids containing `article`, `post`, `story`, `entry`, `content`, `read`, `body`).
+* When extracting **content**:
+
+  * Preserve paragraph breaks; join text with `\n\n` between paragraphs.
+  * Include headings (`<h2>–<h6>`), paragraphs, lists, blockquotes, figure captions, and table text where they belong in the main body.
+  * Exclude non-article boilerplate: navigation, headers, footers, sidebars, cookie banners, paywall prompts, comment sections, related articles, newsletter signup forms, share buttons, ads, and scripts/styles.
+  * Remove HTML tags; output plain text only.
+  * Do not fabricate or summarize; extract verbatim text from the page.
+* Normalize whitespace (collapse multiple spaces/newlines) but do not merge distinct paragraphs.
+* If the page is not an article or no meaningful content can be extracted, output an **empty object** (see below).
+
+#### **Output Format**
+
+Your output must be **only** a JSON-like object with exactly two string fields, `heading` and `content`, for example:
+
+```
+{
+  "heading": "Quantum Breakthrough: New Room-Temperature Superconductor Reported",
+  "content": "Researchers at the Institute... \n\nIn a paper published today, the team..."
+}
+```
+
+If no valid article heading and content can be extracted, output an **empty object**:
+
+```
+{}
+```
+
+Do not output anything else under any circumstances.
