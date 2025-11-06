@@ -69,9 +69,9 @@ def get_articles_url_by_viz_id(viz_id:int):
         cursor = connection.cursor()
 
         cursor.execute("SELECT * FROM article_urls WHERE id=?", (viz_id,))
-        res = cursor.fetchone()
+        res = cursor.fetchall()
 
-        if res: return dict(res)
+        if res: return [dict(obj)["url"] for obj in list(res)]
         else: return None
 
 def add_viz_webpage_article(viz_id:int, heading:str, content:str, source:str):
