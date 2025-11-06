@@ -72,7 +72,7 @@ def get_articles_url_by_viz_id(viz_id:int):
         res = cursor.fetchall()
 
         if res: return [dict(obj)["url"] for obj in list(res)]
-        else: return None
+        else: return []
 
 def add_viz_webpage_article(viz_id:int, heading:str, content:str, source:str):
     with sqlite3.connect("database.db") as connection:
