@@ -67,3 +67,12 @@ def get_articles_url_by_viz_id(viz_id:int):
 
         if res: return dict(res)
         else: return None
+
+def add_viz_webpage_article(viz_id:int, heading:str, content:str, source:str):
+    with sqlite3.connect("database.db") as connection:
+        cursor = connection.cursor()
+
+        cursor.execute("""
+            INSERT OR IGNORE INTO VIZ_website_article_texts (VIZ_id, heading, content, source)
+            VALUES (?, ?, ?, ?)
+        """, (viz_id, heading, content, source))
