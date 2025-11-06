@@ -4,28 +4,37 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 import os
+import time
 
 load_dotenv()
 
 def extract_texts():
     for viz in db.get_all_vzgojno_izobrazevalni_zavodi():
+        print(viz["name"])
         article_urls = db.get_articles_url_by_viz_id(viz["id"])
 
         for url in article_urls:
+            print(f"    {url}")
             try:
                 response = requests.get(url)
             except Exception as e:
+                with open("logs.txt", "a") as f:
+                    f.write(viz["name"]+"\n"+url+"\n"+str(e)+"\n\n\n\n")
+                print("        ❌ error")
                 continue
 
             for attempt in range(3):
                 try:
                     data = generate_extract_article_text_response(response.text)
+                    db.add_viz_webpage_article(viz["id"], data["heading"], data["content"], url)
                 except Exception as e:
-                    continue
-                if not ( "heading" in data and "content" in data ):
+                    print("        server error")
+                    print("            waiting")
+                    time.sleep(10)
+                    print("            🔁 retrying")
                     continue
 
-                db.add_viz_webpage_article(viz["id"], data["heading"], data["content"], url)
+                print("        ✅")
                 break
 
 def generate_extract_article_text_response(html:str) -> list[str]:
