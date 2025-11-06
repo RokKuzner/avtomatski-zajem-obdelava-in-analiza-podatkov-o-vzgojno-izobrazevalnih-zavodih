@@ -15,6 +15,10 @@ def extract_texts(start_indx=None, end_indx=None):
 
         for url in article_urls:
             print(f"    {url}")
+            if db.get_webpage_article_by_source(url):
+                print("        ⏩ already saved. skipping")
+                continue
+
             try:
                 response = requests.get(url)
             except Exception as e:
