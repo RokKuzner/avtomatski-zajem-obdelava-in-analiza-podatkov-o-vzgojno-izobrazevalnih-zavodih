@@ -38,7 +38,7 @@ def generate_extract_article_text_response(html:str) -> list[str]:
         sys_instructions = f.read()
 
     generate_content_config = types.GenerateContentConfig(
-        temperature=0.5,
+        temperature=0.15,
         thinking_config = types.ThinkingConfig(
             thinking_budget=8192,
         ),
