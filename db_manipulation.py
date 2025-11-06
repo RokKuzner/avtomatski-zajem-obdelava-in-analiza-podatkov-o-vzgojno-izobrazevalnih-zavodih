@@ -1,4 +1,10 @@
 import sqlite3
+import re
+
+def normalize_whitespace(text: str) -> str:
+    normalized = re.sub(r'\s+', ' ', text)
+
+    return normalized.strip()
 
 def add_vzgojno_izobrazevalni_zavod(type:str, name:str, website:str, municipality:str) -> bool:
     with sqlite3.connect("database.db") as connection:
@@ -75,4 +81,4 @@ def add_viz_webpage_article(viz_id:int, heading:str, content:str, source:str):
         cursor.execute("""
             INSERT OR IGNORE INTO VIZ_website_article_texts (VIZ_id, heading, content, source)
             VALUES (?, ?, ?, ?)
-        """, (viz_id, heading, content, source))
+        """, (viz_id, normalize_whitespace(heading), normalize_whitespace(content), source))
