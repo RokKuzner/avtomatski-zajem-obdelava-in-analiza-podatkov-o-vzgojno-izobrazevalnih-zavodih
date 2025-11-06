@@ -38,6 +38,16 @@ def manage():
     )
     """)
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS oiv_website_article_texts (
+        oiv_id INTEGER,
+        heading TEXT,
+        content TEXT,
+        source TEXT,
+        FOREIGN KEY (oiv_id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
+    )
+    """)
+
     # Commit changes and close the connection
     connection.commit()
     connection.close()
