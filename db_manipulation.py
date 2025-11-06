@@ -82,3 +82,16 @@ def add_viz_webpage_article(viz_id:int, heading:str, content:str, source:str):
             INSERT OR IGNORE INTO VIZ_website_article_texts (VIZ_id, heading, content, source)
             VALUES (?, ?, ?, ?)
         """, (viz_id, normalize_whitespace(heading), normalize_whitespace(content), source))
+
+def get_webpage_article_by_source(url:str):
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM VIZ_website_article_texts WHERE source=?", (url,))
+        res = cursor.fetchone()
+
+        if res:
+            return dict(res)
+        else:
+            return None
