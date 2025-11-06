@@ -39,12 +39,12 @@ def manage():
     """)
 
     cursor.execute("""
-    CREATE TABLE IF NOT EXISTS oiv_website_article_texts (
-        oiv_id INTEGER,
+    CREATE TABLE IF NOT EXISTS VIZ_website_article_texts (
+        VIZ_id INTEGER,
         heading TEXT,
         content TEXT,
         source TEXT,
-        FOREIGN KEY (oiv_id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
+        FOREIGN KEY (VIZ_id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
     )
     """)
 
