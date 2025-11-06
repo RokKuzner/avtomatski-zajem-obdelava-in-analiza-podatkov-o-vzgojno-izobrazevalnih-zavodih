@@ -43,7 +43,7 @@ def manage():
         VIZ_id INTEGER,
         heading TEXT,
         content TEXT,
-        source TEXT,
+        source TEXT UNIQUE,
         FOREIGN KEY (VIZ_id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
     )
     """)
