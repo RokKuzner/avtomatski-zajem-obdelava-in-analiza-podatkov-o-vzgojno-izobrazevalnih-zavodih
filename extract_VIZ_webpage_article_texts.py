@@ -8,8 +8,8 @@ import time
 
 load_dotenv()
 
-def extract_texts():
-    for viz in db.get_all_vzgojno_izobrazevalni_zavodi():
+def extract_texts(start_indx=None, end_indx=None):
+    for viz in db.get_all_vzgojno_izobrazevalni_zavodi()[start_indx:end_indx]:
         print(viz["name"])
         article_urls = db.get_articles_url_by_viz_id(viz["id"])
 
