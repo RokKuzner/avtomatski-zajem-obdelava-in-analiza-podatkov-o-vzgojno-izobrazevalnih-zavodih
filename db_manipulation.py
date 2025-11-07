@@ -107,6 +107,19 @@ def get_webpage_article_by_source(url:str):
         else:
             return None
         
+def get_webpage_articles_by_viz_id(viz_id:int):
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM VIZ_website_article_texts WHERE VIZ_id=?", (viz_id,))
+        res = cursor.fetchall()
+
+        if res:
+            return [dict(obj) for obj in list(res)]
+        else:
+            return []
+        
 def add_media_article_candidate(viz_id:int, content:str, source:str):
     with sqlite3.connect("database.db") as connection:
         cursor = connection.cursor()
