@@ -35,3 +35,7 @@ Končni rezultati nam pokažejo kar nekaj zanimivih ugotovitev.
 *Ta graf pa je od vseh najbolj nepričakovan. Obrazlaga je, da VIZ na svojih spletnih straneh objavljajo večimona le nevtralna obvestila, medtem, ko pa mediji pišejo o specifičnih VIZ tudi dobra mnenja in pozitivne članke.*
 
 Na zadje je tukaj še [razpored vseh VIZ](./rezultati/rank.txt) od najbolje do najslebše ocenjenega.
+## Drugo
+Celotna implementacija in zasnova: [Rok Kužner](https://github.com/RokKuzner)
+
+[Izziv in navodila](./izziv_in_navodila.pdf): Žejn Grup
