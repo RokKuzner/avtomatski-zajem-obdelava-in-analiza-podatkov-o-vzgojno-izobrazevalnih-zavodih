@@ -68,6 +68,16 @@ def manage():
     )
     """)
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS sentiment_by_viz (
+        id INTEGER,
+        website_sentiment TEXT,
+        media_sentiment TEXT,
+        average_sentiment TEXT,
+        FOREIGN KEY (id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
+    )
+    """)
+
     # Commit changes and close the connection
     connection.commit()
     connection.close()
