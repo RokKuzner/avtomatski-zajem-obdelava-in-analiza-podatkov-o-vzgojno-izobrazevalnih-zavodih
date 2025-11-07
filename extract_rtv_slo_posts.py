@@ -36,7 +36,6 @@ def extract(start_indx=None, end_indx=None):
 
                 driver.get(article_link)
                 if driver.current_url != article_link: # Prohibit rederects to other public media
-                    print("    continuing")
                     continue
 
                 content_elements = driver.find_elements(By.CSS_SELECTOR, "article p")
@@ -44,7 +43,5 @@ def extract(start_indx=None, end_indx=None):
 
                 content = " ".join( [content_element.text.strip() for content_element in content_elements] )
                 db.add_media_article_candidate(viz["id"], content, article_link)
-
-            print("\n")
     finally:
         driver.quit()
