@@ -38,7 +38,7 @@ def extract(start_indx=None, end_indx=None):
                 content_elements = driver.find_elements(By.CSS_SELECTOR, "article p")[:-1] # Skip the last element, sice it is allways a non-content-realted warning
                 if not content_elements: continue
 
-                content = db.normalize_whitespace(" ".join( [content_element.text.strip() for content_element in content_elements] ))
-                #TODO: save article
+                content = " ".join( [content_element.text.strip() for content_element in content_elements] )
+                db.add_media_article_candidate(viz["id"], content, article_link)
     finally:
         driver.quit()
