@@ -46,6 +46,17 @@ def get_vzgojno_izobrazevalni_zavod_by_id(id:str) -> dict:
 
         if res: return dict(res)
         else: return None
+
+def get_vzgojno_izobrazevalni_zavodi_by_municipality(municipality:str) -> list[dict]:
+    with sqlite3.connect(DATABASE_NAME) as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM vzgojno_izobrazevalni_zavodi WHERE municipality=?", (municipality,))
+        res = cursor.fetchall()
+
+        if res: return [dict(obj) for obj in list(res)]
+        else: return []
     
 def add_events_page_url(viz_id: int, url: str):
     with sqlite3.connect(DATABASE_NAME) as connection:
