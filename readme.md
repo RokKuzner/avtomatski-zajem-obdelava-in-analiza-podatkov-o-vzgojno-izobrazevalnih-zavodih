@@ -19,7 +19,7 @@ Za analizo sentimenta je bil potreben Slovenski LM (language model). Najboljša 
 Sam LM model za analizo sentimenta ni dovolj, saj potrebujemo model, ki lahko besedilo klasificira v pozitivno, nevtralno, negativno ali pa oceni pozitivnost na skali od 0 do 1.
 Zato sem izbral sloberta-sentinews-sentence model, ki je "fine tuned" model za dodatnimi sloji za klasifikacijo treniran na čalnkih slovenskih medijev, kar mu daje v tem primeru še dodatno prednost.
 Model je tudi relativno hiter - povprečno besedilo oz. članek iz baze zbrane v tem projektu je klasificiran v povprečno 0.3 sekunde.
-## Retultati
+## Rezultati
 Končni rezultati nam pokažejo kar nekaj zanimivih ugotovitev.
 
 ![alt text](./rezultati/pozitivno-negativno-nevtralno-st.png)
