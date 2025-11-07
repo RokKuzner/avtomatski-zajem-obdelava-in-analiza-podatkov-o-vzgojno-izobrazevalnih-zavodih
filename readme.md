@@ -1,5 +1,7 @@
 # Avtomatski zajem, obdelava in analiza podatkov o vzgojno izobraževalnih zavodih (VIZ)
 ## Pristop
+### Zbiranje osnovnih podatkov o VIZ
+Vsi osnovni podatki (občina, ravnatelj, spletna stran, ...) o vseh VIZ v sloveniji so na voljo v javni evidenci na [tej spletni starni](https://paka3.mss.edus.si/registriweb/Default.aspx).
 ### Izbor tehnologij in knjižnic
 Za shranjevanje podatkov sem si izbral hitro in enostavno bazo podatkov SQLite. Programski jezik je Python. LLM za navigiranje spletnih strani je Googlov Gemini Flash Lite, do katerega program dostopa preko API-ja.
 Za scraping je v glavnem uporabljen Selenium ter Urllib za upravljanje z URL-ji.
