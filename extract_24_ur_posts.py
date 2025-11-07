@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 import urllib.parse
 import db_manipulation as db
 
-def extract():
+def extract(start_indx=None, end_indx=None):
     # Setup driver for background use
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")
@@ -18,7 +18,7 @@ def extract():
 
     try:
         # Extract articles
-        for viz in db.get_all_vzgojno_izobrazevalni_zavodi():
+        for viz in db.get_all_vzgojno_izobrazevalni_zavodi()[start_indx:end_indx]:
             search_url = "https://www.24ur.com/iskanje?q=" + urllib.parse.quote_plus(viz["name"])
             print(search_url)
             try:
