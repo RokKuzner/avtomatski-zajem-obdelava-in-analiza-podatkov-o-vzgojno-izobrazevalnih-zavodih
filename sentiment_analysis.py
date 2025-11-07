@@ -17,32 +17,52 @@ label_match = {
 
 MAX_LEN = 512
 
-def chunk_text(text: str, tokenizer, max_len: int = MAX_LEN):
+def chunk_text_with_weights(text: str, tokenizer, max_len: int = MAX_LEN):
     enc = tokenizer(
         text,
         add_special_tokens=False,
         return_attention_mask=False,
         return_token_type_ids=False,
     )
-    input_ids = enc["input_ids"]
+    ids = enc["input_ids"]
 
-    chunks = []
+    if not ids:
+        return [], []
+
     step = max_len - 2
 
-    for i in range(0, len(input_ids), step):
-        chunk_ids = input_ids[i : i + step]
+    chunks = []
+    weights = []
+
+    for i in range(0, len(ids), step):
+        chunk_ids = ids[i : i + step]
+        if not chunk_ids:
+            continue
         chunk_text = tokenizer.decode(chunk_ids, skip_special_tokens=True)
         chunks.append(chunk_text)
+        weights.append(len(chunk_ids))
 
-    return chunks
+    return chunks, weights
 
-def get_sentiment(text):
-    chunks = chunk_text(text, tokenizer, MAX_LEN)
 
-    # Run on each chunk
+def get_sentiment(text: str) -> float:
+    """
+    Returns a 0–100 sentiment score.
+    """
+    chunks, weights = chunk_text_with_weights(text, tokenizer, MAX_LEN)
+
+    if not chunks:
+        return 50.0  # neutral fallback for empty/invalid text
+
     results = analyzer(chunks, truncation=True, max_length=MAX_LEN)
 
-    scores = [label_match[r["label"]] for r in results]
+    # Weighted average
+    weighted_sum = 0.0
+    total_weight = 0
 
-    # Average
-    return sum(scores) / len(scores)
+    for res, w in zip(results, weights):
+        score = label_match[res["label"]]
+        weighted_sum += score * w
+        total_weight += w
+
+    return weighted_sum / total_weight if total_weight > 0 else 50.0
