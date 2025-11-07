@@ -95,3 +95,12 @@ def get_webpage_article_by_source(url:str):
             return dict(res)
         else:
             return None
+        
+def add_media_article_candidate(viz_id:int, content:str, source:str):
+    with sqlite3.connect("database.db") as connection:
+        cursor = connection.cursor()
+
+        cursor.execute("""
+            INSERT OR IGNORE INTO media_article_candidates (VIZ_id, content, source)
+            VALUES (?, ?, ?)
+        """, (viz_id, normalize_whitespace(content), source))
