@@ -24,8 +24,10 @@ Končni rezultati nam pokažejo kar nekaj zanimivih ugotovitev.
 
 ![alt text](./rezultati/pozitivno-negativno-nevtralno-st.png)
 *Več VIZ je ocenjenih kot pozitivni, nekoliko manj kot negativni, skoraj nič pa ni nevtralnih.*
+
 ![alt text](./rezultati/by_municipality.png)
 *Občine, kot sta npr. Ljubljana in Koper od katerih bi pričakovali, da so na vrhu lestvice, so še kar povprečne.*
+
 ![alt text](./rezultati/website_vs_media_sentiment.png)
 *Ta graf pa je od vseh najbolj nepričakovan. Obrazlaga je, da VIZ na svojih spletnih straneh objavljajo večimona le nevtralna obvestila, medtem, ko pa mediji pišejo o specifičnih VIZ tudi dobra mnenja in pozitivne članke.*
 
