@@ -48,6 +48,16 @@ def manage():
     )
     """)
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS media_article_candidates (
+        VIZ_id INTEGER,
+        content TEXT,
+        source TEXT,
+        FOREIGN KEY (VIZ_id) REFERENCES vzgojno_izobrazevalni_zavodi(id),
+        UNIQUE (VIZ_id, source)
+    )
+    """)
+
     # Commit changes and close the connection
     connection.commit()
     connection.close()
