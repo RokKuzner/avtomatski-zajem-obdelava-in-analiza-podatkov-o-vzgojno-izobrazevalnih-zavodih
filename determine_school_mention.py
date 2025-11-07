@@ -13,7 +13,8 @@ def extract_texts(start_indx=None, end_indx=None):
         viz = db.get_vzgojno_izobrazevalni_zavod_by_id(article["VIZ_id"])
 
         if not viz:
-            #TODO: log VIZ not found
+            with open("logs.txt", "a") as f:
+                f.write(viz["id"]+"-"+viz["name"]+"\n"+article["source"]+"\n"+str(e)+"\n\n\n\n")
             continue
 
         #TODO: check if already saved
