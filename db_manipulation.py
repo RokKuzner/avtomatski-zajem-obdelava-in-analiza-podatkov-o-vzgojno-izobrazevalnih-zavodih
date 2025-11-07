@@ -148,3 +148,13 @@ def get_media_article_by_id_and_source(viz_id:int, source:str):
             return dict(res)
         else:
             return None
+        
+def get_all_media_articles():
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM media_articles")
+        res = cursor.fetchall()
+
+        return [dict(obj) for obj in list(res)]
