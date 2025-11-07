@@ -29,4 +29,4 @@ Končni rezultati nam pokažejo kar nekaj zanimivih ugotovitev.
 ![alt text](./rezultati/website_vs_media_sentiment.png)
 *Ta graf pa je od vseh najbolj nepričakovan. Obrazlaga je, da VIZ na svojih spletnih straneh objavljajo večimona le nevtralna obvestila, medtem, ko pa mediji pišejo o specifičnih VIZ tudi dobra mnenja in pozitivne članke.*
 
-Na zadje je tukaj še razpored vseh VIZ od najbolje do najslebše ocenjenega:
+Na zadje je tukaj še [razpored vseh VIZ](./rezultati/rank.txt) od najbolje do najslebše ocenjenega.
