@@ -34,6 +34,17 @@ def get_vzgojno_izobrazevalni_zavod_by_name(name:str) -> dict:
 
         if res: return dict(res)
         else: return None
+
+def get_vzgojno_izobrazevalni_zavod_by_id(id:str) -> dict:
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM vzgojno_izobrazevalni_zavodi WHERE id=?", (id,))
+        res = cursor.fetchone()
+
+        if res: return dict(res)
+        else: return None
     
 def add_events_page_url(viz_id: int, url: str):
     with sqlite3.connect("database.db") as connection:
