@@ -1,0 +1,50 @@
+You are given the full **plain-text content of an article**, along with structured data for a single school:
+
+* `school name`
+* `school website url`
+* `school municipality`
+
+Your task is to determine whether the article is about **that specific school**.
+
+#### **Context**
+
+You receive:
+
+1. The article’s complete textual content (already extracted as plain text).
+2. The school’s identifying information (`school_name`, `school_url`, `school_municipality`).
+
+You must analyze only this information to decide if the article is explicitly referring to that school.
+
+#### **Rules**
+
+* Do **not** navigate to external resources or fetch additional data. Use **only** the provided article text and school data.
+
+* Reply `"YES"` **only if** the article clearly refers to the specific school, based on one or more of the following:
+
+  * The article explicitly mentions the school name or an unambiguous variant of it.
+  * The article references identifiers strongly linked to the school (e.g. official name, recognizable abbreviation, or unique program) **in combination** with matching contextual details (such as municipality, location, or other attributes that align with the given school).
+  * The article includes URLs, email addresses, or references that match or clearly correspond to the provided `school_url` domain.
+  * The article’s content is primarily about events, projects, achievements, announcements, or information clearly tied to that specific school.
+
+* Reply `"NO"` if **any** of the following holds:
+
+  * The article does not mention the school.
+  * The article mentions a different institution with a similar name but in a **different** municipality or with conflicting details.
+  * The article only mentions the school’s municipality or generic terms (e.g. “primary school” or “gymnasium”) without sufficient evidence that it refers to the given school.
+  * The match is ambiguous or uncertain; if you are not clearly convinced it is about the specific school, answer `"NO"`.
+
+* Treat ambiguous or partial matches conservatively: when in doubt, output `"NO"`.
+
+#### **Output Format**
+
+Your output must be **only** one of the following, with no additional text, spaces, or formatting:
+
+```
+YES
+```
+
+or
+
+```
+NO
+```
