@@ -71,9 +71,9 @@ def manage():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS sentiment_by_viz (
         id INTEGER,
-        website_sentiment TEXT,
-        media_sentiment TEXT,
-        average_sentiment TEXT,
+        website_sentiment NUMERIC,
+        media_sentiment NUMERIC,
+        average_sentiment NUMERIC,
         FOREIGN KEY (id) REFERENCES vzgojno_izobrazevalni_zavodi(id)
     )
     """)
