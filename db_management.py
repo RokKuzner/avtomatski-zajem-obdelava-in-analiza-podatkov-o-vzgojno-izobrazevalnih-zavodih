@@ -70,7 +70,7 @@ def manage():
 
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS sentiment_by_viz (
-        id INTEGER,
+        id INTEGER UNIQUE,
         website_sentiment NUMERIC,
         media_sentiment NUMERIC,
         average_sentiment NUMERIC,
