@@ -8,7 +8,7 @@ import time
 
 load_dotenv()
 
-def extract_texts(start_indx=None, end_indx=None):
+def determine(start_indx=None, end_indx=None):
     for article in db.get_all_media_article_candidates()[start_indx:end_indx]:
         print(article["source"])
         viz = db.get_vzgojno_izobrazevalni_zavod_by_id(article["VIZ_id"])
