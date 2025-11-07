@@ -184,3 +184,12 @@ def get_media_articles_by_viz_id(viz_id:int):
             return [dict(obj) for obj in list(res)]
         else:
             return []
+        
+def add_sentiment_by_viz_datapoint(viz_id:int, website_sentiment:float|None, media_sentiment:float|None, average_sentiment:float|None):
+    with sqlite3.connect("database.db") as connection:
+        cursor = connection.cursor()
+
+        cursor.execute("""
+            INSERT OR IGNORE INTO sentiment_by_viz (id, website_sentiment, media_sentiment, average_sentiment)
+            VALUES (?, ?, ?, ?)
+        """, (viz_id, website_sentiment, media_sentiment, average_sentiment))
