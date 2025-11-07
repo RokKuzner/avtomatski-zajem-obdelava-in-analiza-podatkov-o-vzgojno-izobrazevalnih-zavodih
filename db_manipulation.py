@@ -215,3 +215,14 @@ def get_sentiment_by_viz_datapoints() -> list:
         res = cursor.fetchall()
 
         return [dict(obj) for obj in list(res)]
+
+def get_sentiment_datapoint_by_viz_id(id:int) -> list:
+    with sqlite3.connect(DATABASE_NAME) as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM sentiment_by_viz WHERE id=?", (id,))
+        res = cursor.fetchone()
+
+        if res: return dict(res)
+        else: None
