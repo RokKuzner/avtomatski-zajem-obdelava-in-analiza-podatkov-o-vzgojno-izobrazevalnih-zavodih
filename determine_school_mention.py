@@ -10,6 +10,7 @@ load_dotenv()
 
 def extract_texts(start_indx=None, end_indx=None):
     for article in db.get_all_media_article_candidates()[start_indx:end_indx]:
+        print(article["source"])
         viz = db.get_vzgojno_izobrazevalni_zavod_by_id(article["VIZ_id"])
 
         if not viz:
@@ -17,7 +18,9 @@ def extract_texts(start_indx=None, end_indx=None):
                 f.write(viz["id"]+"-"+viz["name"]+"\n"+article["source"]+"\n"+str(e)+"\n\n\n\n")
             continue
 
-        #TODO: check if already saved
+        if db.get_media_article_by_id_and_source(viz["id"], article["source"]) != None:
+            print("    ⏩ already saved. skipping")
+            continue
 
         for attempt in range(3):
             try:
