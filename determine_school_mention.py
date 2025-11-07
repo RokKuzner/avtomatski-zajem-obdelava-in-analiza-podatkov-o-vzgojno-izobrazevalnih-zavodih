@@ -25,7 +25,8 @@ def extract_texts(start_indx=None, end_indx=None):
         for attempt in range(3):
             try:
                 data = is_school_mentioned(viz, article["content"])
-                #TODO: add to database if the school is mentioned
+                if data == True: db.add_media_article(viz["id"], article["content"], article["source"])
+                
                 print("        ✅")
             except Exception as e:
                 print("        server error")
