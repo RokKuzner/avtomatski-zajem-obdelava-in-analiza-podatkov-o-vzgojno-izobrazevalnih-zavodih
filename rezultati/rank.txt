@@ -1,0 +1,640 @@
+1. Osnovna šola Col
+2. Osnovna šola Benedikt
+3. Osnovna šola Brezovica pri Ljubljani
+4. Osnovna šola Cerklje ob Krki
+5. Osnovna šola Maksa Pleteršnika Pišece
+6. Osnovna šola Jožeta Krajca Rakek
+7. Osnovna šola Cerkvenjak - Vitomarci
+8. Osnovna šola Prežihovega Voranca Bistrica
+9. Osnovna šola Loka Črnomelj
+10. Osnovna šola Mirana Jarca Črnomelj
+11. Osnovna šola Stari trg ob Kolpi
+12. Osnovna šola Dragomelj
+13. Osnovna šola Duplek
+14. Osnovna šola Gornja Radgona
+15. Osnovna šola narodnega heroja Rajka Hrastnik
+16. Osnovna šola Dragotina Ketteja Ilirska Bistrica
+17. Osnovna šola Jelšane
+18. Osnovna šola Rudolfa Ukoviča Podgrad
+19. Osnovna šola Ferda Vesela Šentvid pri Stični
+20. Osnovna šola Zagradec
+21. Osnovna šola Cirkovce
+22. Osnovna šola Kidričevo
+23. Osnovna šola Ivana Babiča - Jagra Marezige
+24. Osnovna šola Jožeta Gorjupa Kostanjevica na Krki
+25. Osnovna šola Franceta Prešerna Kranj
+26. Osnovna šola Orehek Kranj
+27. Osnovna šola Stražišče Kranj
+28. Osnovna šola Adama Bohoriča Brestanica
+29. Osnovna šola Jurija Dalmatina Krško
+30. Osnovna šola Koprivnica
+31. Osnovna šola Podbočje
+32. Osnovna šola XIV. divizije Senovo
+33. Osnovna šola Voličina
+34. Dvojezična osnovna šola I Lendava
+35. Osnovna šola Litija
+36. Osnovna šola Božidarja Jakca Ljubljana
+37. Osnovna šola Martina Krpana Ljubljana
+38. Osnovna šola Vodmat
+39. Osnovna šola Mala Nedelja
+40. Osnovna šola Log - Dragomer
+41. Osnovna šola Janka Kersnika Brdo
+42. Osnovna šola Franceta Prešerna Maribor
+43. Osnovna šola Janka Padežnika Maribor
+44. Osnovna šola Malečnik
+45. Osnovna šola Pirniče
+46. Osnovna šola I Murska Sobota
+47. Osnovna šola III Murska Sobota
+48. Osnovna šola Muta
+49. Osnovna šola Cirila Kosmača Piran
+50. Osnovna šola Sečovlje
+51. Osnovna šola Kajetana Koviča Poljčane
+52. Osnovna šola Ribnica na Pohorju
+53. VIZ II. OŠ Rogaška Slatina
+54. Osnovna šola Janka Glazerja Ruše
+55. Osnovna šola Belokranjskega odreda Semič
+56. Osnovna šola Tržišče
+57. Osnovna šola Podgorje pri Slovenj Gradcu
+58. Osnovna šola Vavta vas
+59. Osnovna šola Blaža Kocena Ponikva
+60. Osnovna šola Slivnica pri Celju
+61. Osnovna šola dr. Pavla Lunačka Šentrupert
+62. Osnovna šola Šmarjeta
+63. Osnovna šola Štore
+64. Osnovna šola Dušana Muniha Most na Soči
+65. Osnovna šola Franceta Bevka Tolmin
+66. Osnovna šola Ivana Cankarja Trbovlje
+67. Osnovna šola Šempeter v Savinjski dolini
+68. Biotehniški center Naklo, Srednja šola
+69. Šolski center Kranj, Strokovna gimnazija
+70. Šolski center Škofja Loka, Srednja šola za lesarstvo
+71. Šolski center Nova Gorica
+72. Šolski center Nova Gorica, Biotehniška šola
+73. Srednja medijska in grafična šola Ljubljana
+74. Strokovni izobraževalni center Ljubljana, Srednja poklicna in strokovna šola Bežigrad
+75. Šolski center Ljubljana, Srednja lesarska šola
+76. Zavod sv. Stanislava, Škofijska klasična gimnazija
+77. Lesarska šola Maribor, Srednja lesarska in gozdarska šola
+78. Srednja gradbena šola in gimnazija Maribor
+79. Šolski center Ptuj, Elektro in računalniška šola
+80. Šolski center Ptuj, Strojna šola
+81. Šolski center Šentjur, Srednja poklicna in strokovna šola
+82. Srednja tehniška in poklicna šola Trbovlje
+83. Šolski center Celje, Srednja šola za kemijo, elektrotehniko in računalništvo
+84. Gimnazija Novo mesto
+85. Osnovna šola dr. Jožeta Toporišiča Dobova
+86. Osnovna šola Kungota
+87. Osnovna šola Gradec
+88. Osnovna šola Artiče
+89. Šolski center Velenje, Gimnazija
+90. Osnovna šola Lenart
+91. VIZ Osnovna šola Rogatec
+92. Osnovna šola Boštanj
+93. Osnovna šola Toneta Šraja Aljoše
+94. Osnovna šola Križevci
+95. Osnovna šola Šmartno pod Šmarno goro
+96. Osnovna šola Mirna
+97. Osnovna šola Mirana Jarca
+98. Šolski center Slovenj Gradec
+99. Osnovna šola Bojana Ilicha Maribor
+100. Osnovna šola Škofja Loka - Mesto
+101. Dvojezična osnovna šola Genterovci
+102. Osnovna šola narodnega heroja Maksa Pečarja
+103. Osnovna šola Ljudski vrt Ptuj
+104. Prva osnovna šola Slovenj Gradec
+105. ERUDIO ZASEBNA GIMNAZIJA, Zavod za izobraževanje
+106. Osnovna šola Šenčur
+107. Osnovna šola Tišina
+108. Biotehniški center Naklo
+109. Osnovna šola Otlica
+110. Osnovna šola Šentjanž pri Dravogradu
+111. Osnovna šola Hinka Smrekarja Ljubljana
+112. Osnovna šola Sveti Jurij ob Ščavnici
+113. Srednja šola Josipa Jurčiča Ivančna Gorica
+114. Gimnazija Franca Miklošiča Ljutomer
+115. Osnovna šola Medvode
+116. Šolski center Rogaška Slatina
+117. Osnovna šola Ob Dravinji Slovenske Konjice
+118. Osnovna šola Brežice
+119. Osnovna šola Riharda Jakopiča Ljubljana
+120. Srednja gradbena, geodetska, okoljevarstvena šola in strokovna gimnazija Ljubljana
+121. Osnovna šola bratov Polančičev Maribor
+122. Osnovna šola Bistrica ob Sotli
+123. Osnovna šola Antona Žnideršiča Ilirska Bistrica
+124. Osnovna šola Franca Rozmana - Staneta Ljubljana
+125. Osnovna šola Ivana Cankarja Ljutomer
+126. Osnovna šola Tabor Logatec
+127. Osnovna šola Maksa Durjave Maribor
+128. Osnovna šola Podlehnik
+129. Ekonomska šola Celje
+130. Gimnazija Nova Gorica
+131. Osnovna šola Simona Jenka Kranj
+132. Osnovna šola Domžale
+133. Izobraževalni center Piramida Maribor
+134. Osnovna šola Kuzma
+135. Osnovna šola Rudolfa Maistra Šentilj
+136. Gimnazija Jesenice
+137. Osnovna šola Danile Kumar
+138. Osnovna šola Toneta Čufarja
+139. Gimnazija Jurija Vege Idrija
+140. Osnovna šola Antona Ukmarja Koper
+141. Konservatorij za glasbo in balet Maribor
+142. Osnovna šola Bizeljsko
+143. Osnovna šola Podgora Kuteževo
+144. Osnovna šola Otočec
+145. Osnovna šola Stopiče
+146. Osnovna šola Miklavž pri Ormožu
+147. Osnovna šola Podčetrtek
+148. Srednja šola za farmacijo, kozmetiko in zdravstvo
+149. Osnovna šola Kamnica
+150. Osnovna šola Šmarje pri Kopru
+151. Osnovna šola Hudinja
+152. Šolski center Postojna, Gimnazija, vzgojiteljska in računalniška šola
+153. Osnovna šola Raka
+154. Šolski center Celje, Srednja šola za gradbeništvo in varovanje okolja
+155. Osnovna šola Vojke Šmuc Izola
+156. Osnovna šola Toneta Tomšiča Knežak
+157. Osnovna šola Rada Robiča Limbuš
+158. Osnovna šola Brusnice
+159. Osnovna šola Staneta Žagarja Lipnica
+160. Osnovna šola dr. Franceta Prešerna
+161. Osnovna šola Tončke Čeč Trbovlje
+162. Gimnazija Škofja Loka
+163. Šolski center Škofja Loka
+164. Šolski center Nova Gorica, Strojna, prometna in lesarska šola
+165. Prva gimnazija Maribor
+166. Ekonomska gimnazija in srednja šola Radovljica
+167. Osnovna šola Primoža Trubarja Velike Lašče
+168. Osnovna šola Josipa Vandota Kranjska Gora
+169. Osnovna šola Petrovče
+170. Gimnazija in ekonomska srednja šola Trbovlje
+171. Zavod za gluhe in naglušne Ljubljana, Srednja šola in dom
+172. Osnovna šola Danila Lokarja Ajdovščina
+173. Osnovna šola "Borcev za severno mejo" Maribor
+174. Osnovna šola Leona Štuklja Maribor
+175. Osnovna šola Slave Klavore Maribor
+176. Osnovna šola Antona Aškerca Velenje
+177. Osnovna šola Dušana Flisa Hoče
+178. Osnovna šola Bakovci
+179. Osnovna šola dr. Vita Kraigherja Ljubljana
+180. Osnovna šola Blaža Arniča Luče
+181. Osnovna šola Naklo
+182. Osnovna šola Selnica ob Dravi
+183. Osnovna šola Šmarje pri Jelšah
+184. Osnovna šola Koroška Bela Jesenice
+185. Strokovni izobraževalni center Alme M. Karlin
+186. II. osnovna šola Celje
+187. Osnovna šola Frana Kranjca
+188. Osnovna šola Šmartno v Tuhinju
+189. Osnovna šola Odranci
+190. Osnovna šola Lucija
+191. Osnovna šola Sveti Tomaž
+192. Osnovna šola Šalek Velenje
+193. Šolski center Kranj
+194. Srednja šola Veno Pilon Ajdovščina
+195. Srednja ekonomsko - poslovna šola Koper
+196. Gimnazija Šiška
+197. Srednja frizerska šola Ljubljana
+198. Osnovna šola Globoko
+199. Gimnazija Kranj
+200. Osnovna šola Vrhovci
+201. Dvojezična osnovna šola Dobrovnik
+202. Osnovna šola Antona Aškerca Rimske Toplice
+203. Ekonomska šola Murska Sobota
+204. Grm Novo mesto - center biotehnike in turizma, Kmetijska šola Grm in biotehniška gimnazija
+205. Gimnazija Jožeta Plečnika Ljubljana
+206. Šolski center Šentjur
+207. Osnovna šola Dragomirja Benčiča - Brkina Hrpelje
+208. Osnovna šola Preserje pri Radomljah
+209. Biotehniški izobraževalni center Ljubljana
+210. Osnovna šola dr. Bogomirja Magajne Divača
+211. Osnovna šola Toneta Čufarja Maribor
+212. Osnovna šola Rodica
+213. Osnovna šola Lovrenc na Pohorju
+214. Osnovna šola II Murska Sobota
+215. Gimnazija Brežice
+216. Gimnazija Celje - Center
+217. Osnovna šola Solkan
+218. Osnovna šola Hruševec Šentjur
+219. Osnovna šola Leskovec pri Krškem
+220. Srednja tehniška šola Koper
+221. Gimnazija Tolmin
+222. Gimnazija Poljane
+223. Osnovna šola Preska
+224. Gimnazija Franceta Prešerna
+225. Osnovna šola Frana Roša Celje
+226. Osnovna šola Radlje ob Dravi
+227. Osnovna šola Toneta Okrogarja
+228. Osnovna šola Zreče
+229. Osnovna šola Karla Destovnika Kajuha Ljubljana
+230. Osnovna šola Kašelj
+231. Osnovna šola Žiri
+232. Osnovna šola Valentina Vodnika Ljubljana
+233. Osnovna šola Veliki Gaber
+234. Osnovna šola Ivana Skvarče
+235. Srednješolski izobraževalni center Radovljica
+236. Šolski center Nova Gorica, Srednja ekonomska in trgovska šola
+237. Ekonomska šola Novo mesto, Srednja šola in gimnazija
+238. Srednja upravno administrativna šola Ljubljana
+239. Šolski center Ljubljana, Gimnazija Antona Aškerca
+240. Zavod sv. Frančiška Saleškega, Gimnazija Želimlje
+241. Ekonomska šola Murska Sobota, Srednja šola in gimnazija
+242. Šolski center Celje, Gimnazija Lava
+243. Zavod sv. Frančiška Saleškega
+244. Šolski center Celje
+245. Konservatorij za glasbo in balet Ljubljana, Srednja glasbena in baletna šola
+246. Gimnazija Vič
+247. Prometna šola Maribor
+248. Osnovna šola Toneta Čufarja Jesenice
+249. Osnovna šola Poljane Ljubljana
+250. Osnovna šola Dolenjske Toplice
+251. III. osnovna šola Celje
+252. Osnovna šola Simona Gregorčiča Kobarid
+253. Osnovna šola in vrtec Sveta Trojica
+254. Šolski center Nova Gorica, Elektrotehniška in računalniška šola
+255. Osnovna šola Nazarje
+256. Osnovna šola Stična
+257. Osnovna šola Pohorskega odreda Slovenska Bistrica
+258. Osnovna šola Miklavž na Dravskem polju
+259. Osnovna šola Frana Erjavca Nova Gorica
+260. Osnovna šola Pohorskega bataljona Oplotnica
+261. Osnovna šola in vrtec Ankaran
+262. Osnovna šola Prežihovega Voranca Maribor
+263. Osnovna šola Sveta Ana
+264. Osnovna šola Škofljica
+265. Osnovna šola Ivana Cankarja Vrhnika
+266. Osnovna šola Ledina
+267. Šolski center Novo mesto, Srednja gradbena, lesarska in vzgojiteljska šola
+268. Gimnazija Koper
+269. Osnovna šola Stranje
+270. Gimnazija Murska Sobota
+271. Gimnazija in srednja šola za kemijo in farmacijo Ruše
+272. Šola za hortikulturo in vizualne umetnosti Celje
+273. Osnovna šola Draga Bajca Vipava
+274. Osnovna šola Mokronog
+275. Biotehniška šola Rakičan
+276. Osnovna šola Zadobrova
+277. Osnovna šola Milojke Štrukelj Nova Gorica
+278. Osnovna šola Lucijana Bratkoviča Bratuša Renče
+279. Gimnazija, elektro in pomorska šola Piran
+280. Gimnazija Ledina
+281. Srednja šola Domžale, Gimnazija
+282. Osnovna šola Oskarja Kovačiča
+283. Šolski center Novo mesto, Srednja elektro-računalniška šola in tehniška gimnazija
+284. Srednja šola za gostinstvo in turizem Maribor
+285. Osnovna šola Ob Rinži Kočevje
+286. Srednja šola za gostinstvo in turizem Radenci
+287. I. gimnazija v Celju
+288. Osnovna šola Oskarja Kovačiča Škofije
+289. Osnovna šola Franceta Bevka
+290. Gimnazija Bežigrad, Mednarodna šola
+291. Osnovna šola F. S. Finžgarja Lesce
+292. 2. osnovna šola Slovenska Bistrica
+293. Osnovna šola dr. Jožeta Pučnika Črešnjevec
+294. Šolski center Ravne na Koroškem, Gimnazija
+295. Osnovna šola Venclja Perka
+296. I. osnovna šola Celje
+297. Osnovna šola Bogojina
+298. Osnovna šola Lava Celje
+299. Srednja zdravstvena šola Murska Sobota
+300. Strokovno izobraževalni center Brežice
+301. Osnovna šola Matije Valjavca Preddvor
+302. Osnovna šola Dravlje
+303. Osnovna šola Juršinci
+304. Osnovna šola Kanal
+305. Osnovna šola dr. Aleš Bebler - Primož Hrvatini
+306. Osnovna šola Fara
+307. Osnovna šola Blanca
+308. Osnovna šola Krmelj
+309. Osnovna šola Srečka Kosovela Sežana
+310. Druga osnovna šola Slovenj Gradec
+311. Osnovna šola Planina pri Sevnici
+312. Osnovna šola Trebnje
+313. Osnovna šola Gustava Šiliha Velenje
+314. Osnovna šola Vodice
+315. Osnovna šola Žetale
+316. Gimnazija Moste
+317. Osnovna šola Breg
+318. Osnovna šola Frana Albrehta Kamnik
+319. Osnovna šola Jakoba Aljaža Kranj
+320. Osnovna šola Preserje
+321. Šolski center Celje, Srednja šola za storitvene dejavnosti in logistiko
+322. Osnovna šola Tabor I Maribor
+323. Osnovna šola Branik
+324. II. gimnazija Maribor
+325. Osnovna šola Zbora odposlancev Kočevje
+326. Osnovna šola Cerkno
+327. Gimnazija in srednja šola Kočevje
+328. Osnovna šola Hajdina
+329. Osnovna šola Sostro
+330. Osnovna šola Louisa Adamiča Grosuplje
+331. Osnovna šola Mihe Pintarja - Toleda Velenje
+332. Elektrotehniško-računalniška strokovna šola in gimnazija Ljubljana
+333. Osnovna šola Bežigrad
+334. Srednja šola Izola
+335. Osnovna šola Vič
+336. Osnovna šola Dutovlje
+337. Gimnazija Bežigrad, Gimnazija
+338. Osnovna šola Loče
+339. Osnovna šola Olge Meglič
+340. Osnovna šola Martina Konšaka Maribor
+341. Šolski center Nova Gorica, Gimnazija in zdravstvena šola
+342. Osnovna šola Toma Brejca Kamnik
+343. Osnovna šola Ivanjkovci
+344. Srednja zdravstvena šola Ljubljana
+345. Osnovna šola Drska
+346. Grm Novo mesto - center biotehnike in turizma
+347. Osnovna šola Livada Velenje
+348. Šola za hortikulturo in vizualne umetnosti Celje, Srednja poklicna in strokovna šola
+349. Srednja šola Slovenska Bistrica
+350. Osnovna šola Dante Alighieri Izola
+351. Osnovna šola Simona Jenka
+352. Osnovna šola Griže
+353. Osnovna šola Miška Kranjca
+354. Osnovna šola Franja Malgaja Šentjur
+355. Osnovna šola Rače
+356. Osnovna šola Dob
+357. Osnovna šola Jurija Vege
+358. Osnovna šola Vide Pregarc Ljubljana
+359. Osnovna šola Franca Lešnika - Vuka Slivnica pri Mariboru
+360. Osnovna šola Križe
+361. Srednja elektro-računalniška šola Maribor
+362. Srednja vzgojiteljska šola, gimnazija in umetniška gimnazija Ljubljana
+363. Osnovna šola Šempas
+364. Osnovna šola Dobrna
+365. Osnovna šola Prežihovega Voranca Jesenice
+366. Zavod sv. Stanislava
+367. Osnovna šola Livada
+368. Osnovna šola Jožeta Moškriča
+369. Osnovna šola Dobravlje
+370. Osnovna šola Beltinci
+371. Osnovna šola Neznanih talcev Dravograd
+372. Strokovni izobraževalni center Ljubljana
+373. Škofijska gimnazija Vipava
+374. Osnovna šola Toneta Pavčka
+375. Osnovna šola Primoža Trubarja Laško
+376. Osnovna šola Antona Bezenška Frankolovo
+377. Osnovna šola Prevole
+378. Šolski center Ravne na Koroškem, Srednja šola
+379. Osnovna šola Antona Tomaža Linharta Radovljica
+380. Osnovna šola Polzela
+381. Osnovna šola Ig
+382. Šolski center Ptuj
+383. Osnovna šola Gorje
+384. Gimnazija Ormož
+385. Osnovna šola Šturje, Ajdovščina
+386. Osnovna šola Šmartno
+387. Osnovna šola Kapela
+388. Osnovna šola Ketteja in Murna
+389. Osnovna šola Bršljin
+390. Osnovna šola Sava Kladnika Sevnica
+391. Osnovna šola Cirkulane - Zavrč
+392. Osnovna šola Ivana Roba Šempeter pri Gorici
+393. Osnovna šola Vuzenica
+394. Osnovna šola Ivana Groharja
+395. Osnovna šola Prežihovega Voranca
+396. Osnovna šola Simona Kosa Podbrdo
+397. Osnovna šola Bistrica
+398. Gimnazija Ptuj
+399. Šolski center Postojna, Gimnazija, vzgojiteljska in računalniška šola Ilirska Bistrica
+400. Srednja šola za oblikovanje in fotografijo Ljubljana
+401. Srednja šola Domžale
+402. Osnovna šola Prule
+403. Osnovna šola Gornji Petrovci
+404. Osnovna šola Rečica ob Savinji
+405. Osnovna šola Antona Ingoliča Spodnja Polskava
+406. Osnovna šola Metlika
+407. Osnovna šola Turnišče
+408. III. gimnazija Maribor
+409. Gimnazija in srednja šola Rudolfa Maistra Kamnik
+410. Osnovna šola Nove Fužine
+411. Osnovna šola Janka Modra Dol pri Ljubljani
+412. Osnovna šola Grm Novo mesto
+413. Osnovna šola Ormož
+414. Osnovna šola Milana Šuštaršiča
+415. Osnovna šola Prežihovega Voranca Ravne na Koroškem
+416. Srednja šola Zagorje
+417. Osnovna šola Velika Dolina
+418. Gimnazija Bežigrad
+419. Lesarska šola Maribor
+420. Osnovna šola Idrija
+421. Zavod Antona Martina Slomška, Škofijska gimnazija Antona Martina Slomška
+422. Osnovna šola Trzin
+423. Tehniški šolski center Maribor
+424. Osnovna šola Stara Cerkev
+425. Osnovna šola Miren
+426. Osnovna šola Poljane
+427. Osnovna šola Dobrova
+428. Osnovna šola Trbovlje
+429. Osnovna šola Vransko - Tabor
+430. Osnovna šola Ljubečna
+431. I. osnovna šola Žalec
+432. Gimnazija Šentvid
+433. Osnovna šola Polje
+434. Osnovna šola Majde Vrhovnik Ljubljana
+435. Osnovna šola Šentjernej
+436. Srednja šola tehniških strok Šiška
+437. Osnovna šola Franja Goloba Prevalje
+438. Ekonomska šola Ljubljana
+439. Osnovna šola Savsko naselje
+440. Osnovna šola Puconci
+441. Osnovna šola Brinje Grosuplje
+442. Gimnazija Gian Rinaldo Carli Koper
+443. Waldorfska šola Maribor
+444. Osnovna šola Veržej
+445. Osnovna šola Ivana Tavčarja Gorenja vas
+446. Šolski center Krško - Sevnica
+447. Osnovna šola Notranjski odred Cerknica
+448. Osnovna šola Mengeš
+449. Osnovna šola Železniki
+450. Osnovna šola Gorišnica
+451. Šolski center Postojna
+452. Srednja ekonomska šola Ljubljana
+453. Osnovna šola Gorica Velenje
+454. Osnovna šola Miroslava Vilharja Postojna
+455. Biotehniška šola Maribor
+456. Šolski center Ravne na Koroškem
+457. Osnovna šola Čepovan
+458. Osnovna šola Dornberk
+459. Zavod Antona Martina Slomška
+460. Šolski center Krško - Sevnica, Srednja šola Sevnica
+461. Osnovna šola Ludvika Pliberška Maribor
+462. Waldorfska šola Ljubljana
+463. Osnovna šola Bovec
+464. Osnovna šola Davorina Jenka Cerklje na Gorenjskem
+465. Osnovna šola Žužemberk
+466. Osnovna šola Mežica
+467. Gimnazija Litija
+468. Osnovna šola Tržič
+469. Dvojezična srednja šola Lendava
+470. Osnovna šola Šmihel
+471. Šolski center Novo mesto, Srednja zdravstvena in kemijska šola
+472. Osnovna šola dr. Janeza Mencingerja Bohinjska Bistrica
+473. Osnovna šola Frana Kocbeka Gornji Grad
+474. Osnovna šola Pier Paolo Vergerio il Vecchio Koper
+475. Osnovna šola Kolezija
+476. Osnovna šola Trnovo
+477. Osnovna šola Anice Černejeve Makole
+478. Zavod Antona Martina Slomška Maribor, Osnovna šola Montessori
+479. Osnovna šola Prestranek
+480. Osnovna šola Fram
+481. Osnovna šola dr. Ivana Prijatelja Sodražica
+482. Osnovna šola Miška Kranjca Velika Polana
+483. Osnovna šola Žirovnica
+484. Šolski center Kranj, Srednja tehniška šola
+485. Strokovno izobraževalni center Brežice, Srednja šola
+486. Ekonomska šola Celje, Gimnazija in srednja šola
+487. Srednja zdravstvena in kozmetična šola Celje
+488. Osnovna šola in vrtec Apače
+489. Osnovna šola Črni Vrh
+490. Šolski center Novo mesto, Srednja strojna šola
+491. Srednja šola Jesenice
+492. Osnovna šola Rovte
+493. Osnovna šola Alojza Gradnika Dobrovo
+494. Osnovna šola Črna na Koroškem
+495. Šolski center Velenje
+496. Srednja trgovska in aranžerska šola Ljubljana
+497. Osnovna šola Komenda Moste
+498. Osnovna šola Polhov Gradec
+499. Osnovna šola Cvetka Golarja Škofja Loka
+500. Šolski center za pošto, ekonomijo in telekomunikacije Ljubljana
+501. Srednja gozdarska, lesarska in zdravstvena šola Postojna
+502. Osnovna šola Pod goro Slovenske Konjice
+503. Osnovna šola Deskle
+504. Osnovna šola Mladika Ptuj
+505. Osnovna šola bratov Letonja Šmartno ob Paki
+506. Osnovna šola Spodnja Idrija
+507. Osnovna šola Dekani
+508. Osnovna šola Braslovče
+509. Osnovna šola Koseze
+510. Osnovna šola Marije Vere
+511. Osnovna šola Majšperk
+512. Srednja šola Črnomelj
+513. Osnovna šola Šmarje - Sap
+514. Osnovna šola Horjul
+515. Osnovna šola Mislinja
+516. Osnovna šola Antona Globočnika Postojna
+517. Osnovna šola Pivka
+518. Osnovna šola Prebold
+519. Osnovna šola Videm
+520. IV. osnovna šola Celje
+521. Osnovna šola Center Novo mesto
+522. Osnovna šola 8 talcev Logatec
+523. Srednja zdravstvena in kozmetična šola Maribor
+524. Osnovna šola Šentvid
+525. Osnovna šola Kajetana Koviča Radenci
+526. Srednja šola za oblikovanje Maribor
+527. Osnovna šola Šalovci
+528. Osnovna šola Vojnik
+529. Osnovna šola Vitanje
+530. Osnovna šola Podzemelj
+531. Osnovna šola "Koroški jeklarji" Ravne na Koroškem
+532. Osnovna šola Brezno - Podvelka
+533. Osnovna šola Velika Nedelja
+534. Šolski center Ljubljana
+535. Osnovna šola Cankova
+536. Osnovna šola Grad
+537. Osnovna šola Livade - Izola
+538. Osnovna šola Nove Jarše
+539. Osnovna šola Janka Ribiča Cezanjevci
+540. Osnovna šola Jarenina
+541. Osnovna šola Pesnica
+542. Osnovna šola Antona Martina Slomška Vrhnika
+543. Srednja poklicna in tehniška šola Murska Sobota
+544. Osnovna šola prof. dr. Josipa Plemlja Bled (no score)
+545. Osnovna šola dr. Ivana Korošca Borovnica (no score)
+546. Osnovna šola Franceta Prešerna Črenšovci (no score)
+547. Osnovna šola komandanta Staneta Dragatuš (no score)
+548. Osnovna šola Vinica (no score)
+549. Osnovna šola Destrnik - Trnovska vas (no score)
+550. Osnovna šola Dobje (no score)
+551. Osnovna šola Toneta in Franceta Kralja Dobrepolje (no score)
+552. Osnovna šola dr. Franja Žgeča Dornava (no score)
+553. Osnovna šola Korena (no score)
+554. Osnovna šola dr. Antona Trstenjaka Negova (no score)
+555. Svobodna šola Kurešček (no score)
+556. Osnovna šola Rudija Mahniča - Brkinca Pregarje (no score)
+557. Osnovna šola Kobilje (no score)
+558. Osnovna šola Antona Šibelja - Stjenka Komen (no score)
+559. Osnovna šola Dušana Bordona Semedela - Koper (no score)
+560. Osnovna šola Elvire Vatovec Prade - Koper (no score)
+561. Osnovna šola Istrskega odreda Gračišče (no score)
+562. Osnovna šola Koper (no score)
+563. Osnovna šola Kozje (no score)
+564. Osnovna šola Lesično (no score)
+565. Osnovna šola Janeza Puharja Kranj - Center (no score)
+566. Osnovna šola Matije Čopa Kranj (no score)
+567. Osnovna šola Predoslje Kranj (no score)
+568. Osnovna šola Staneta Žagarja Kranj (no score)
+569. Osnovna šola 16. decembra Mojstrana (no score)
+570. Osnovna šola Gabrovka - Dole (no score)
+571. Inštitut Lila, OE OŠ Lila Ljubljana (no score)
+572. Inštitut montessori, Zavod za pomoč staršem pri razvoju otrok (no score)
+573. Osnovna šola Spodnja Šiška (no score)
+574. Osnovna šola Vižmarje - Brod (no score)
+575. Osnovna šola Zalog (no score)
+576. Zasebna osnovna šola Locus Montessorium (no score)
+577. Osnovna šola Ljubno ob Savinji (no score)
+578. Osnovna šola Stročja vas (no score)
+579. Osnovna šola heroja Janeza Hribarja Stari trg pri Ložu (no score)
+580. Osnovna šola dr. Antona Debeljaka Loški Potok (no score)
+581. Osnovna šola Angela Besednjaka Maribor (no score)
+582. Osnovna šola Draga Kobala Maribor (no score)
+583. Osnovna šola Franca Rozmana - Staneta Maribor (no score)
+584. Osnovna šola Markovci (no score)
+585. Dvojezična osnovna šola Prosenjakovci (no score)
+586. Osnovna šola Fokovci (no score)
+587. Osnovna šola Mozirje (no score)
+588. Osnovna šola Jakobski Dol (no score)
+589. Osnovna šola Vincenzo e Diego de Castro Piran (no score)
+590. Osnovna šola Košana (no score)
+591. Javni zavod Osnovna šola Marjana Nemca Radeče (no score)
+592. Osnovna šola Janeza Kuharja Razkrižje (no score)
+593. JVIZ I. Osnovna šola Rogaška Slatina (no score)
+594. Osnovna šola Sveti Jurij (no score)
+595. Osnovna šola Milana Majcna Šentjanž (no score)
+596. Osnovna šola Šmartno pri Slovenj Gradcu (no score)
+597. Osnovna šola Gustava Šiliha Laporje (no score)
+598. Osnovna šola Partizanska bolnišnica Jesen Tinje (no score)
+599. Osnovna šola Šmartno na Pohorju (no score)
+600. Osnovna šola Središče ob Dravi (no score)
+601. Osnovna šola Starše (no score)
+602. Osnovna šola Jožeta Hudalesa Jurovski dol (no score)
+603. Osnovna šola Sladki Vrh (no score)
+604. Osnovna šola Dramlje (no score)
+605. Osnovna šola Frana Metelka Škocjan (no score)
+606. Osnovna šola Karla Destovnika-Kajuha Šoštanj (no score)
+607. Osnovna šola Ivana Kavčiča Izlake (no score)
+608. Šolski center Kranj, Srednja ekonomska, storitvena in gradbena šola (no score)
+609. Šolski center Škofja Loka, Srednja šola za strojništvo (no score)
+610. Grm Novo mesto - center biotehnike in turizma, Srednja šola za gostinstvo in turizem z dijaškim in študentskim domom (no score)
+611. Šolski center Slovenj Gradec, Gimnazija (no score)
+612. Šolski center Slovenj Gradec, Srednja šola Slovenj Gradec in Muta (no score)
+613. Šolski center Slovenj Gradec, Srednja zdravstvena šola (no score)
+614. Gimnazija Antonio Sema Piran (no score)
+615. Srednja šola Pietro Coppo Izola (no score)
+616. Šolski center Srečka Kosovela Sežana, Gimnazija in ekonomska šola (no score)
+617. Biotehniški izobraževalni center Ljubljana, Gimnazija in veterinarska šola (no score)
+618. Biotehniški izobraževalni center Ljubljana, Živilska in naravovarstvena šola (no score)
+619. Center za izobraževanje, rehabilitacijo in usposabljanje Kamnik, Srednja šola (no score)
+620. ERUDIO Srednja šola (no score)
+621. ERUDIO zasebna gimnazija (no score)
+622. Srednja šola Domžale, Poklicna in strokovna šola (no score)
+623. Srednja šola za gastronomijo in turizem Ljubljana (no score)
+624. Šolski center Ljubljana, Srednja šola za strojništvo, kemijo in varovanje (no score)
+625. Šolski center za pošto, ekonomijo in telekomunikacije Ljubljana, Srednja tehniška in strokovna šola (no score)
+626. Izobraževalni center Piramida Maribor, Srednja šola za prehrano in živilstvo (no score)
+627. Prometna šola Maribor, Srednja prometna šola in dijaški dom (no score)
+628. Srednja ekonomska šola in gimnazija Maribor (no score)
+629. Srednja šola za trženje in dizajn Maribor (no score)
+630. Šolski center Ptuj, Šola za ekonomijo, turizem in kmetijstvo (no score)
+631. Tehniški šolski center Maribor, Srednja strojna šola (no score)
+632. Šolski center Krško - Sevnica, Srednja šola Krško (no score)
+633. Šolski center Postojna, Srednja strojna in ekonomska šola (no score)
+634. Šolski center Celje, Srednja šola za strojništvo, mehatroniko in medije (no score)
+635. Šolski center Slovenske Konjice - Zreče (no score)
+636. Šolski center Slovenske Konjice - Zreče, Gimnazija Slovenske Konjice (no score)
+637. Šolski center Slovenske Konjice - Zreče, Srednja poklicna in strokovna šola Zreče (no score)
+638. Šolski center Velenje, Elektro in računalniška šola (no score)
+639. Šolski center Velenje, Šola za storitvene dejavnosti (no score)
+640. Šolski center Velenje, Šola za strojništvo, geotehniko in okolje (no score)
