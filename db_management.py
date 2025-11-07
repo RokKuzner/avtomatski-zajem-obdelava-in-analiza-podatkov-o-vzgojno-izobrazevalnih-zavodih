@@ -1,7 +1,9 @@
 import sqlite3
 
+DATABASE_NAME = "database.db"
+
 def manage():
-    connection = sqlite3.connect("database.db")
+    connection = sqlite3.connect(DATABASE_NAME)
 
     # Create a cursor object
     cursor = connection.cursor()
