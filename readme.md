@@ -12,6 +12,7 @@ Scraping iz spletnih strani sem tako razdelil na 3 naloge:
 * iskanje strani z novicami
 * izluščanje povezav do posamičnih novic
 * izluščanje vsebine novic
+
 Pri vsaki nalogi sem uporabil Googlov LLM Gemini Flash Lite, ki je z 85% uspešnostjo opravil svojo nalogo. Hkrati je tudi najcenejši LLM API na trgu. Cena reševanje tega modula je približno 10€-15€.
 ### Zajem podatkov iz spletnih medijev
 Zajem podatkov iz spletnih medijev ni predstavljal večjega izziva, saj sta dva medija zadoščala.
