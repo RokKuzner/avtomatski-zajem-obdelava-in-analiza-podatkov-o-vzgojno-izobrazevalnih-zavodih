@@ -194,3 +194,13 @@ def add_sentiment_by_viz_datapoint(viz_id:int, website_sentiment:float|None, med
             INSERT OR IGNORE INTO sentiment_by_viz (id, website_sentiment, media_sentiment, average_sentiment)
             VALUES (?, ?, ?, ?)
         """, (viz_id, website_sentiment, media_sentiment, average_sentiment))
+
+def get_sentiment_by_viz_datapoints() -> list:
+    with sqlite3.connect(DATABASE_NAME) as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM sentiment_by_viz")
+        res = cursor.fetchall()
+
+        return [dict(obj) for obj in list(res)]
