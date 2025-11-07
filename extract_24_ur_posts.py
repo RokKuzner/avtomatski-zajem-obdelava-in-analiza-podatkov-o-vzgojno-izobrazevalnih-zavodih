@@ -24,7 +24,8 @@ def extract(start_indx=None, end_indx=None):
             try:
                 driver.get(search_url)
             except Exception as e:
-                continue
+                with open("logs.txt", "a") as f:
+                    f.write(viz["name"]+"\n"+search_url+"\n"+str(e)+"\n\n\n\n")
 
             article_elements = driver.find_elements(By.CSS_SELECTOR, "main.main div a.group")
             article_links = [article_element.get_attribute("href") for article_element in article_elements]
