@@ -104,3 +104,14 @@ def add_media_article_candidate(viz_id:int, content:str, source:str):
             INSERT OR IGNORE INTO media_article_candidates (VIZ_id, content, source)
             VALUES (?, ?, ?)
         """, (viz_id, normalize_whitespace(content), source))
+
+def get_all_media_article_candidates() -> list[dict]:
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM media_article_candidates")
+        res = cursor.fetchall()
+
+        if res: return [dict(obj) for obj in list(res)]
+        else: return []
