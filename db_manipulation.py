@@ -158,3 +158,16 @@ def get_all_media_articles():
         res = cursor.fetchall()
 
         return [dict(obj) for obj in list(res)]
+
+def get_media_articles_by_viz_id(viz_id:int):
+    with sqlite3.connect("database.db") as connection:
+        connection.row_factory = sqlite3.Row
+        cursor = connection.cursor()
+
+        cursor.execute("SELECT * FROM media_articles WHERE VIZ_id=?", (viz_id,))
+        res = cursor.fetchall()
+
+        if res:
+            return [dict(obj) for obj in list(res)]
+        else:
+            return []
