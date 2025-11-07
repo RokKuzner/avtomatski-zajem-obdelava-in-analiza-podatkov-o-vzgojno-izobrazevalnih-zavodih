@@ -20,6 +20,7 @@ def extract():
         # Extract articles
         for viz in db.get_all_vzgojno_izobrazevalni_zavodi():
             search_url = "https://www.24ur.com/iskanje?q=" + urllib.parse.quote_plus(viz["name"])
+            print(search_url)
             try:
                 driver.get(search_url)
             except Exception as e:
